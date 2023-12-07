@@ -1,0 +1,118 @@
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+table{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    color: black;
+     width: 100%;
+
+   
+}
+
+table.list{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    border: 1px solid rgb(204,200,200);
+    text-align: left;
+    padding: 8px px;
+    background-color: white;
+    text-align: center;
+   
+}
+
+tr:nth-child(even), table.list thread> tr{
+    background-color: black;
+}
+
+input[type="text"],input[type="number"]{
+    width: 92%;
+    display: inline-block;
+    border: 1px solid rgb(165,161,161);
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+       
+}
+
+input[type="submit"],input[type="reset"]{
+   
+    background: #eee;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    background-color: orangered;
+    border: 1px solid rgb(165,161,161);
+    color: yellow;
+}
+
+input[type="submit"]:hover{
+    background: darkorange;
+}
+
+input[type="reset"]:hover{
+    background: darkorange;
+}
+
+button{
+    background: orangered;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgb(165,161,161);
+    color: white;
+}
+
+button:hover{
+    background:darkorange ;
+}
+
+select{
+    background-color: white;
+    border-color: orangered;
+    border-radius: 4px;
+    padding: 3px;
+    width: 95%;
+    border: 1px solid rgb(165,161,161);
+
+}
+ th {
+    border: 1px solid rgb(204,200,200);
+    border-collapse: collapse;
+    background-color:orangered;
+     color: yellow;
+  }::placeholder {
+    color: black;
+    
+  }
+form{
+    background-color: white;
+
+}
+label{
+    color: yellow;
+}form div{
+    background-color: black;
+    padding: 8px 15px;
+    text-align: left;
+}
+td table{
+    background-color: white;
+}
