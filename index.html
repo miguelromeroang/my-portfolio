@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit(event)">
+                    <div>
+                        <label for="fullName">FULL NAME</label>
+                        <input type="text" name="fullName" id="fullName" placeholder="Enter Fullname">
+                    </div>
+                    <div>
+                        <label for="position">POSITION</label>
+                        <select id="position">
+                            <option value="">CHOOSE ONE</option>
+                            <option value="crew">CREW</option>
+                            <option value="manager">MANAGER</option>
+                            <option value="cashier">CASHIER</option>
+                            <option value="guard">GUARD</option>
+                            <option value="janitor">JANITOR</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="weekWork">NUMBERS OF WEEK WORK</label>
+                        <select id="weekWork">
+                            <option value="">CHOOSE ONE</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="dayWork">NUMBER OF DAYS WORK</label>
+                        <select id="dayWork">
+                            <option value="">CHOOSE ONE</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="hourWork">NUMBER OF HOURS WORK PER DAY</label>
+                        <select id="hourWork">
+                            <option value="">CHOOSE ONE</option>
+                            <option value="1">1 HOUR</option>
+                            <option value="2">2 HOURS</option>
+                            <option value="3">3 HOURS</option>
+                            <option value="4">4 HOURS</option>
+                            <option value="5">5 HOURS</option>
+                            <option value="6">6 HOURS</option>
+                            <option value="7">7 HOURS</option>
+                            <option value="8">8 HOURS</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="perHour">SALARY PER HOURS</label>
+                        <select id="perHour">
+                            <option value="">CHOOSE ONE</option>
+                            <option value="610">CREW : 610</option>
+                            <option value="640">MANAGER : 640</option>
+                            <option value="610">CASHIER : 610</option>
+                            <option value="610">GUARD : 610</option>
+                            <option value="610">JANITOR : 610</option>
+                        </select>
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit" id="submit" onclick="computation()">
+                        <input type="reset" value="Reset" id="reset">
+                    </div>
+                </form>
+
+            </td>
+            <td>
+                <table class="list" id="storeList">
+                    <thead>
+                        <tr>
+                            <th>FULL NAME</th>
+                            <th>POSITION</th>
+                            <th>WEEKS OF WORK</th>
+                            <th>DAYS OF WORK</th>
+                            <th>HOURS PER DAY</th>
+                            <th>SALARY/HOUR</th>
+                            <th>TOTAL GROSS INCOME</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
